@@ -2884,6 +2884,8 @@
   .bottom-logo-container {
     width: auto;
     height: 24px;
+    justify-content: start;
+    align-items: center;
     object-fit: cover;
     overflow: hidden;
   }
