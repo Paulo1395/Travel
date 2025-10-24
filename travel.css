@@ -1,0 +1,3085 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@font-face {
+  font-family: "cabinet grotesk";
+  src: url("font/CabinetGrotesk/CabinetGrotesk-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cabinet grotesk";
+  src: url("font/CabinetGrotesk/CabinetGrotesk-Medium.otf") format("otf");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cabinet grotesk";
+  src: url("font/CabinetGrotesk/CabinetGrotesk-Bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.hero-and-header-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2rem 6rem 3rem 6rem;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.793) 0%,
+      rgba(0, 0, 0, 0.814) 50%,
+      transparent 100%
+    ),
+    url("Images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 64px;
+}
+
+.header-container .logo {
+  width: 200px;
+  height: 30px;
+  /* overflow: hidden; */
+}
+.header-container .logo img {
+  width: 180px;
+  height: 28px;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 24rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.home-and-circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 24rem;
+}
+
+.home-and-circle-container:hover {
+  background-color: #f0f0f0;
+}
+
+.home-and-circle-container .circle-container {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.home-and-circle-container .link-text-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0rem;
+}
+.home-and-circle-container .link-text-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.link-text-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 24rem;
+}
+
+.link-text-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link-text-container p {
+  width: 100%;
+  height: auto;
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.button-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #040404;
+  border-radius: 24rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.button-container:hover {
+  background-color: #222222;
+}
+
+.hamburger-container {
+  display: none;
+}
+
+.hero-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.hero-text-plus-input-container {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.hero-text-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.hero-text-container .hero-heading {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -3px;
+}
+
+.hero-text-container .hero-description {
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #e4e4e4;
+  line-height: 1.5;
+}
+
+.hero-input-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+
+.top-tab-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  padding: 0.625rem 0.75rem;
+  background-color: #eeeeee;
+  border-radius: 1.25rem;
+}
+.tab-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0.75rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  column-gap: 10px;
+}
+.tab-container:first-child .tab-text-container p {
+  color: #000000;
+}
+
+.tab-container:nth-child(2),
+.tab-container:nth-child(3),
+.tab-container:nth-child(4) {
+  background-color: transparent;
+}
+
+.tab-container .icon-container {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-container.icon-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-container .tab-text-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.tab-container .tab-text-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #585858;
+}
+
+.all-input-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  column-gap: 16px;
+}
+
+.label-and-input-contaner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.label-and-input-contaner label {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #494949;
+}
+
+.label-and-input-contaner input {
+  width: 100%;
+  height: 40px;
+  padding: 1.5rem 0.75rem;
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 24rem;
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.input-and-icon-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.input-icon-plus-text-container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 8px;
+  position: absolute;
+  left: 8px;
+}
+
+.input-icon-plus-text-container .input-icon-container {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-icon-plus-text-container .input-icon-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.input-icon-plus-text-container .icon-text-container p {
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #c0c0c0;
+}
+.input-and-icon-container input {
+  width: 100%;
+  height: 40px;
+  padding: 1.5rem 0.75rem 1.5rem 2.5rem;
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 24rem;
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.born-for-wanderlust-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.tag-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 24rem;
+  column-gap: 8px;
+}
+
+.tag-circle-container {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  border: #b5b5b5 3px solid;
+}
+
+.tag-text-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-text-container p {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #484848;
+}
+
+.tag-description {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-description h1 {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 2.5rem;
+  color: #373737;
+  line-height: 1.3;
+  text-align: center;
+}
+.tag-description h1 .span1 {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 2.5rem;
+  color: #949494;
+}
+
+.tag-description h1 .span2 {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 2.5rem;
+  color: #949494;
+}
+
+.wander-image-list-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.wander-image-list-container .image-container:nth-child(1) {
+  transform: rotate(-30deg);
+}
+.wander-image-list-container .image-container:nth-child(3) {
+  transform: rotate(30deg);
+}
+
+.image-container {
+  width: 135px;
+  height: 135px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.what-kind-of-explorer-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.top-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.top-container .tag-description {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container .tag-description h1 {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 2.5rem;
+  color: #373737;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.bottom-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+}
+.explorer-left-container {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.explorer-left-container .left-container-card:nth-child(1) {
+  grid-column: span 2;
+}
+
+.left-container-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+}
+
+.left-container-card .left-container-icon {
+  width: 83px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 164, 251, 0.08);
+  border-radius: 10px;
+}
+
+.left-container-card .left-container-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.left-container-card .heading-and-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.left-container-card .heading-and-description-container h2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.5rem;
+}
+
+.left-container-card .heading-and-description-container p {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.explorer-right-container {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #b5b5b5;
+  background-image: url(./Images/romantic\ escapes.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 1.5rem 0rem;
+  border-radius: 1.25rem;
+}
+
+.details-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 6px;
+  padding: 1rem 1rem;
+  border-radius: 0.65rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.05px);
+}
+
+.details-container h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  color: #ffffff;
+  text-align: left;
+}
+
+.details-container p {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Featured adventure */
+.featured-adventure-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.feature-bottom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.up-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.up-container .feature-card-container:nth-child(1) {
+  width: 80%;
+  height: 369px;
+}
+
+.down-container .feature-card-container:nth-child(2) {
+  width: 80%;
+  height: 369px;
+}
+
+.down-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.feature-card-container {
+  position: relative;
+  width: 100%;
+  height: 369px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("Images/dolomitesimage.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2rem;
+}
+
+.down-container .feature-card-container:nth-child(1) {
+  background: url("Images/natureimage.jpg") center/cover no-repeat;
+}
+
+.down-container .feature-card-container:nth-child(2) {
+  background: url("Images/scottishimage.jpg") center/cover no-repeat;
+}
+
+.badge-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 24rem;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.cicrle-container {
+  width: 8px;
+  height: 8px;
+  background-color: #dbdbdb;
+  border-radius: 12rem;
+}
+
+.badge-label-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.badge-label-container p {
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.location-and-title-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: #ffffff;
+  row-gap: 8px;
+}
+
+.location-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.location-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon-container span {
+  font-size: 18px;
+}
+
+.location-text-container {
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.location-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.location-title-container p {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.feature-flip-card-container {
+  width: 100%;
+  height: 369px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #823e29;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2rem;
+  row-gap: 8px;
+}
+
+.feature-flip-card-container .location-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.feature-flip-card-container .location-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff997a;
+}
+
+.feature-flip-card-container .location-icon-container span {
+  font-size: 18px;
+}
+
+.feature-flip-card-container .location-text-container {
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.flip-title-and-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 8px;
+}
+
+.flip-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.flip-title-container p {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.flip-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.flip-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #d4d4d4;
+}
+
+.pricing-and-button-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 8px;
+}
+
+.pricing-container {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.button-container-and-icon-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.button-container-and-icon-container:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.button-container-and-icon-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.button-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-icon-container span {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* How it works section */
+.how-it-work-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.how-its-work-left-container {
+  width: 90%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-its-work-left-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.how-its-work-right-container {
+  width: 90%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 22px;
+  background-color: #ffffff;
+}
+
+.how-it-works-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.how-it-works-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.all-how-it-work-card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 24px;
+}
+
+.how-it-work-card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 12px;
+  padding: 1.25rem;
+  border-radius: 1.2rem;
+  background-color: #fbfbfb;
+}
+
+.how-it-work-card-container:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.how-it-work-card-container:nth-child(3) {
+  background-color: #ffffff;
+}
+
+.how-it-work-card-icon-container {
+  width: 69px;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+}
+
+.how-it-work-card-container:nth-child(2) .how-it-work-card-icon-container {
+  background-color: #f7f7f7;
+}
+
+.how-it-work-card-container:nth-child(3) .how-it-work-card-icon-container {
+  background-color: #f7f7f7;
+}
+
+.how-it-work-card-icon-container img {
+  width: 36px;
+  height: 36px;
+}
+
+.how-it-works-heading-and-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.how-it-works-heading-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.how-it-works-heading-container p {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #373636;
+}
+
+.how-it-work-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.how-it-work-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.25rem;
+  color: #858585;
+}
+
+/* Traveller stories section */
+.traveller-stories-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.all-avatar-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.avatar-container {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-container:nth-child(3) {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-container:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.all-stories-card-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem 0;
+  scrollbar-width: none; /* Firefox - hide scrollbar */
+}
+
+.all-stories-card-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari - hide scrollbar */
+}
+
+.stories-card-container {
+  flex: 0 0 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+
+.stories-card-container:nth-child(2) {
+  opacity: 1;
+}
+.stories-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.stories-title-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.stories-bottom-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-and-location-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 8px;
+}
+
+.name-and-location-container h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.name-and-location-container p {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #474747;
+}
+
+.bottom-avatar-container {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.bottom-avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* cta section */
+.cta-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+  padding: 2rem 10rem 3rem 10rem;
+}
+
+.cta-content-container {
+  width: 100%;
+  height: 691px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  background-color: #823e29;
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-heading-and-description-container {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-heading-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-heading-container h1 {
+  font-family: "cabinet grotesk";
+  font-weight: bold;
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+}
+.cta-description-container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+  text-align: center;
+  line-height: 150%;
+}
+
+.cta-content-container .button-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 24rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-content-container .button-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #000000;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.cta-content-container .button-container:hover {
+  background-color: #f7f7f7;
+}
+
+.left-design-container {
+  position: absolute;
+  left: -12px;
+  bottom: -12px;
+}
+
+.right-design-container {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+}
+
+/* Footer section container */
+
+.footer-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 5rem 10rem 5rem 10rem;
+  background-color: #0e0e0e;
+}
+
+.top-footer-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.top-left-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 24px;
+}
+.bottom-logo-container {
+  width: auto;
+  height: 34px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.bottom-logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-description-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.left-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+}
+
+.all-socials-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.social-icon-container {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-right-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+  column-gap: 40px;
+}
+
+.explore-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 12px;
+}
+
+.help-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 12px;
+}
+
+.subscribe-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 12px;
+}
+
+.link-heading-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.link-heading-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1.25rem;
+  color: #e4e4e4;
+}
+
+.links {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 16px;
+}
+
+.links p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #b8b8b8;
+  line-height: 150%;
+}
+
+.subscribe-description-container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.subscribe-description-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #b8b8b8;
+  line-height: 150%;
+}
+
+.subscribe-input-plus-button-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 12px;
+}
+.subscribe-input-plus-button-container input {
+  width: 100%;
+  height: 40px;
+  padding: 1.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: none;
+  border-radius: 24rem;
+  font-family: "cabinet grotesk";
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.subscribe-input-plus-button-container .button-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 24rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-input-plus-button-container .button-container p {
+  font-family: "cabinet grotesk";
+  font-weight: medium;
+  font-size: 1rem;
+  color: #000000;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.subscribe-input-plus-button-container .button-container:hover {
+  background-color: #f7f7f7;
+}
+
+.bottom-footer-section-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-footer-section-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+  }
+
+  .hero-and-header-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 1rem 3rem 1rem;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.793) 0%,
+        rgba(0, 0, 0, 0.814) 50%,
+        transparent 100%
+      ),
+      url("Images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    row-gap: 100px;
+  }
+
+  .header-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 64px;
+  }
+
+  .header-container .logo {
+    width: 160px;
+    height: 20px;
+    /* overflow: hidden; */
+  }
+  .header-container .logo img {
+    width: 130px;
+    height: 20px;
+  }
+
+  .nav-links-container {
+    display: none;
+  }
+
+  .header-container .button-container {
+    display: none;
+  }
+
+  .hamburger-container {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger-container span {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .hero-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+
+  .hero-text-plus-input-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .hero-text-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .hero-text-container .hero-heading {
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -3px;
+  }
+
+  .hero-text-container .hero-description {
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #e4e4e4;
+    line-height: 1.5;
+  }
+
+  .hero-input-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+  }
+
+  .top-tab-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    padding: 0.625rem 0.75rem;
+    background-color: #eeeeee;
+    border-radius: 1.25rem;
+  }
+  .tab-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 0.75rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    column-gap: 10px;
+  }
+  .tab-container:first-child .tab-text-container p {
+    color: #000000;
+  }
+
+  .tab-container:nth-child(2),
+  .tab-container:nth-child(3),
+  .tab-container:nth-child(4) {
+    background-color: transparent;
+  }
+
+  .tab-container .icon-container {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-container.icon-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab-container .tab-text-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .tab-container .tab-text-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #585858;
+  }
+
+  .all-input-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    row-gap: 16px;
+  }
+
+  .label-and-input-contaner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  .label-and-input-contaner label {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #494949;
+  }
+
+  .label-and-input-contaner input {
+    width: 100%;
+    height: 40px;
+    padding: 1.5rem 0.75rem;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 24rem;
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .input-and-icon-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+  }
+
+  .input-icon-plus-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 8px;
+    position: absolute;
+    left: 8px;
+  }
+
+  .input-icon-plus-text-container .input-icon-container {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-icon-plus-text-container .input-icon-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input-icon-plus-text-container .icon-text-container p {
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: #c0c0c0;
+  }
+  .input-and-icon-container input {
+    width: 100%;
+    height: 40px;
+    padding: 1.5rem 0.75rem 1.5rem 2.5rem;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 24rem;
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+    color: #000000;
+  }
+  .born-for-wanderlust-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .tag-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 24rem;
+    column-gap: 8px;
+  }
+
+  .tag-circle-container {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    border: #b5b5b5 3px solid;
+  }
+
+  .tag-text-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag-text-container p {
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #484848;
+  }
+
+  .tag-description {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag-description h1 {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: #373737;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .tag-description h1 .span1 {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: #949494;
+  }
+
+  .tag-description h1 .span2 {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: #949494;
+  }
+
+  .wander-image-list-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  .wander-image-list-container .image-container:nth-child(1) {
+    transform: rotate(-30deg);
+  }
+  .wander-image-list-container .image-container:nth-child(3) {
+    transform: rotate(30deg);
+  }
+
+  .image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .what-kind-of-explorer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .top-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  .top-container .tag-description {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-container .tag-description h1 {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: #373737;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .bottom-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+  }
+  .explorer-left-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 16px;
+  }
+
+  .explorer-left-container .left-container-card:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .left-container-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+  }
+
+  .left-container-card .left-container-icon {
+    width: 83px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 164, 251, 0.08);
+    border-radius: 10px;
+  }
+
+  .left-container-card .left-container-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .left-container-card .heading-and-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .left-container-card .heading-and-description-container h2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+  }
+
+  .left-container-card .heading-and-description-container p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .explorer-right-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #b5b5b5;
+    background-image: url(./Images/romantic\ escapes.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 1.5rem 0rem;
+    border-radius: 1.25rem;
+  }
+
+  .details-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 6px;
+    padding: 1rem 1rem;
+    border-radius: 0.65rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.05px);
+  }
+
+  .details-container h1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .details-container p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+  }
+  .featured-adventure-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .feature-bottom-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+  }
+
+  .up-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+  }
+
+  .up-container .feature-card-container:nth-child(1) {
+    width: 100%;
+    height: 369px;
+  }
+
+  .down-container .feature-card-container:nth-child(2) {
+    width: 100%;
+    height: 369px;
+  }
+
+  .down-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+  }
+
+  .feature-card-container {
+    position: relative;
+    width: 100%;
+    height: 369px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: url("Images/dolomitesimage.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem 1rem;
+  }
+
+  .down-container .feature-card-container:nth-child(1) {
+    background: url("Images/natureimage.jpg") center/cover no-repeat;
+  }
+
+  .down-container .feature-card-container:nth-child(2) {
+    background: url("Images/scottishimage.jpg") center/cover no-repeat;
+  }
+
+  .badge-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 24rem;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  .cicrle-container {
+    width: 8px;
+    height: 8px;
+    background-color: #dbdbdb;
+    border-radius: 12rem;
+  }
+
+  .badge-label-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .badge-label-container p {
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .location-and-title-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #ffffff;
+    row-gap: 8px;
+  }
+
+  .location-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  .location-icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location-icon-container span {
+    font-size: 18px;
+  }
+
+  .location-text-container {
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .location-title-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .location-title-container p {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .feature-flip-card-container {
+    width: 100%;
+    height: 369px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #823e29;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem 1rem;
+    row-gap: 8px;
+  }
+
+  .feature-flip-card-container .location-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  .feature-flip-card-container .location-icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff997a;
+  }
+
+  .feature-flip-card-container .location-icon-container span {
+    font-size: 18px;
+  }
+
+  .feature-flip-card-container .location-text-container {
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .flip-title-and-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 8px;
+  }
+
+  .flip-title-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .flip-title-container p {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  .flip-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .flip-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #d4d4d4;
+  }
+
+  .pricing-and-button-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 8px;
+  }
+
+  .pricing-container {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .button-container-and-icon-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .button-container-and-icon-container:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+
+  .button-container-and-icon-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .button-icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-icon-container span {
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .how-it-work-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .how-its-work-left-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-its-work-left-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .how-its-work-right-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 22px;
+    background-color: #ffffff;
+  }
+
+  .how-it-works-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .how-it-works-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+  .all-how-it-work-card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 24px;
+  }
+
+  .how-it-work-card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 12px;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background-color: #fbfbfb;
+  }
+
+  .how-it-work-card-container:nth-child(2) {
+    background-color: #ffffff;
+  }
+
+  .how-it-work-card-container:nth-child(3) {
+    background-color: #ffffff;
+  }
+
+  .how-it-work-card-icon-container {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+  }
+
+  .how-it-work-card-container:nth-child(2) .how-it-work-card-icon-container {
+    background-color: #f7f7f7;
+  }
+
+  .how-it-work-card-container:nth-child(3) .how-it-work-card-icon-container {
+    background-color: #f7f7f7;
+  }
+
+  .how-it-work-card-icon-container img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .how-it-works-heading-and-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .how-it-works-heading-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .how-it-works-heading-container p {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #373636;
+  }
+
+  .how-it-work-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .how-it-work-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #858585;
+  }
+
+  .traveller-stories-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .all-avatar-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  .avatar-container {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .avatar-container:nth-child(3) {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .avatar-container:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .all-stories-card-container {
+    width: 100%;
+    max-width: 353px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+    scrollbar-width: none;
+  }
+
+  .all-stories-card-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari - hide scrollbar */
+  }
+
+  .stories-card-container {
+    flex: 0 0 350px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    transform: scale(0.95);
+  }
+
+  .stories-card-container:nth-child(2) {
+    opacity: 1;
+  }
+  .stories-title-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .stories-title-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+  .stories-bottom-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name-and-location-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 8px;
+  }
+
+  .name-and-location-container h1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.25rem;
+    color: #000000;
+  }
+
+  .name-and-location-container p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #474747;
+  }
+
+  .bottom-avatar-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .bottom-avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .cta-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .cta-content-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    background-color: #823e29;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-heading-and-description-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-heading-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-heading-container h1 {
+    font-family: "cabinet grotesk";
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  .cta-description-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #e4e4e4;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  .cta-content-container .button-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    border-radius: 24rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-content-container .button-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #000000;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  .cta-content-container .button-container:hover {
+    background-color: #f7f7f7;
+  }
+
+  .left-design-container {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+  }
+  .left-design-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-design-container {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+  }
+
+  .right-design-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: #0e0e0e;
+  }
+
+  .top-footer-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 32px;
+  }
+
+  .top-left-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 24px;
+  }
+  .bottom-logo-container {
+    width: auto;
+    height: 24px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .bottom-logo-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-description-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .left-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.25rem;
+    color: #e4e4e4;
+  }
+
+  .all-socials-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  .social-icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icon-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-right-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+  }
+
+  .explore-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 12px;
+  }
+
+  .help-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 12px;
+  }
+
+  .subscribe-container {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 12px;
+  }
+
+  .link-heading-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .link-heading-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1.25rem;
+    color: #e4e4e4;
+  }
+
+  .links {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 16px;
+  }
+
+  .links p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #b8b8b8;
+    line-height: 150%;
+  }
+
+  .subscribe-description-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .subscribe-description-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #b8b8b8;
+    line-height: 150%;
+  }
+
+  .subscribe-input-plus-button-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 12px;
+  }
+  .subscribe-input-plus-button-container input {
+    width: 100%;
+    height: 40px;
+    padding: 1.5rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.09);
+    border: none;
+    border-radius: 24rem;
+    font-family: "cabinet grotesk";
+    font-weight: normal;
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .subscribe-input-plus-button-container .button-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    border-radius: 24rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .subscribe-input-plus-button-container .button-container p {
+    font-family: "cabinet grotesk";
+    font-weight: medium;
+    font-size: 1rem;
+    color: #000000;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  .subscribe-input-plus-button-container .button-container:hover {
+    background-color: #f7f7f7;
+  }
+
+  .bottom-footer-section-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-footer-section-container img {
+    width: 100%;
+    height: 50%;
+  }
+}
